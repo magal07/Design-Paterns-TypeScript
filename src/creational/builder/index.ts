@@ -7,7 +7,7 @@ console.log(mainDishBuilder.getMeal());
 console.log(mainDishBuilder.getPrice());
 
 mainDishBuilder.reset();
-const meal2 = mainDishBuilder.makeBevarage().getMeal();
+const meal2 = mainDishBuilder.makeBeverage().getMeal();
 console.log(meal2);
 
 const veganDishBuilder = new VeganDishBuilder();

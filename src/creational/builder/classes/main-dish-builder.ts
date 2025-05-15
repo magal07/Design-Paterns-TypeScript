@@ -20,7 +20,7 @@ export class MainDishBuilder implements MealBuilderProtocol {
     this._meal.add(rice, beans, meat);
     return this;
   }
-  makeBevarage(): this {
+  makeBeverage(): this {
     const bevarage = new Beverage('Bebida', 7);
     this._meal.add(bevarage);
     return this;
