@@ -1,9 +1,11 @@
 import { ConcreteMemento } from './concrete-memento';
-import { Memento } from './memento';
+import type { Memento } from './memento';
 
-// Originator
 export class ImageEditor {
-  constructor(private filePath: string, private fileFormat: string) {}
+  constructor(
+    private filePath: string,
+    private fileFormat: string,
+  ) {}
 
   convertFormatTo(format: string): void {
     this.fileFormat = format;

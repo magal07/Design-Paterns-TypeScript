@@ -1,5 +1,4 @@
-import { ImageEditor } from './image-editor';
-import { Memento } from './memento';
+import type { ImageEditor } from './image-editor';
 
 export class ImageEditorBackupManager {
   private mementos: Memento[] = [];
@@ -7,20 +6,19 @@ export class ImageEditorBackupManager {
   constructor(private readonly imageEditor: ImageEditor) {}
 
   backup(): void {
-    console.log(`Backup: salvando o estado de ImageEditor`);
+    console.log(`Backup: save state de image editor`);
     this.mementos.push(this.imageEditor.save());
   }
-
   undo(): void {
     const memento = this.mementos.pop();
 
     if (!memento) {
-      console.log('Backup: no mementos');
+      console.log('Backup: mementos');
       return;
     }
 
     this.imageEditor.restore(memento);
-    console.log(`Backup: ${memento.getName()} foi restaurado com sucesso.`);
+    console.log(`Backup: ${memento.getName()} restore successfully`);
   }
 
   showMementos(): void {

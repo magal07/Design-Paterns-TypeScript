@@ -1,4 +1,4 @@
-import { Memento } from './memento';
+import type { Memento } from './memento';
 
 export class ConcreteMemento implements Memento {
   constructor(
@@ -7,20 +7,17 @@ export class ConcreteMemento implements Memento {
     private filePath: string,
     private fileFormat: string,
   ) {}
+  getFilePath(): string {
+    return this.filePath;
+  }
+  getFileFormat(): string {
+    return this.fileFormat;
+  }
 
   getName(): string {
     return this.name;
   }
-
   getDate(): Date {
     return this.date;
-  }
-
-  getFilePath(): string {
-    return this.filePath;
-  }
-
-  getFileFormat(): string {
-    return this.fileFormat;
   }
 }
