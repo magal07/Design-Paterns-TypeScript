@@ -1,5 +1,5 @@
-import { Mediator } from './mediator';
-import { SellerProduct } from './seller-product';
+import type { Mediator } from './mediator';
+import type { SellerProduct } from './seller-product';
 
 export class Seller {
   private products: SellerProduct[] = [];
@@ -10,7 +10,6 @@ export class Seller {
       console.log(product.id, product.name, product.price),
     );
   }
-
   addProduct(...products: SellerProduct[]): void {
     products.forEach((product) => this.products.push(product));
   }
@@ -24,10 +23,10 @@ export class Seller {
       (product) => product.id === id,
     );
     if (productIndex === -1) return;
+
     const product = this.products.splice(productIndex, 1);
     return product[0];
   }
-
   // viewProducts(): void {
   //   if (!this.mediator) return;
   //   this.mediator.showProducts();

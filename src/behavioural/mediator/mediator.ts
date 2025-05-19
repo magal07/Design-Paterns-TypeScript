@@ -1,5 +1,5 @@
-import { Seller } from './seller';
-import { SellerProduct } from './seller-product';
+import type { Seller } from './seller';
+import type { SellerProduct } from './seller-product';
 
 export class Mediator {
   private sellers: Seller[] = [];
@@ -18,12 +18,11 @@ export class Mediator {
       product = this.sellers[i].sell(id);
 
       if (product) {
-        console.log('Aqui está', product.id, product.name, product.price);
+        console.log('Produt: ', product.id, product.name, product.price);
         return;
       }
     }
-
-    console.log('Não encontrei nenhum produto com id', id);
+    console.log('Select id not found', id);
   }
 
   showProducts(): void {
