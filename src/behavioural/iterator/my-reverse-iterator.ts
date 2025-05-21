@@ -1,10 +1,12 @@
-import { MyIteratorProtocol } from './my-iterator-protocol';
-import { MyDataStructure } from './my-data-structure';
+import type { MyDataStructure } from './my-data-structure-';
+import type { MyIteratorProtocol } from './my-iterator-protocol';
 
 export class MyReverseIterator implements MyIteratorProtocol<string> {
-  private index = this.dataStructure.size();
+  private index: number;
 
-  constructor(private readonly dataStructure: MyDataStructure) {}
+  constructor(private readonly dataStructure: MyDataStructure) {
+    this.index = dataStructure.size();
+  }
 
   reset(): void {
     this.index = this.dataStructure.size();
@@ -12,6 +14,7 @@ export class MyReverseIterator implements MyIteratorProtocol<string> {
 
   next(): IteratorResult<string> {
     this.index--;
+
     const returnValue = this.makeValue(this.dataStructure.items[this.index]);
     returnValue.done = this.index < 0;
     return returnValue;

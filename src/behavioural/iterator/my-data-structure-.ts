@@ -24,7 +24,6 @@ export class MyDataStructure {
   [Symbol.iterator](): MyIteratorProtocol<string> {
     return this.iterator;
   }
-
   resetIterator(): void {
     this.iterator.reset();
   }

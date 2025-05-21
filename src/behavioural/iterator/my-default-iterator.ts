@@ -1,5 +1,5 @@
-import { MyIteratorProtocol } from './my-iterator-protocol';
-import { MyDataStructure } from './my-data-structure';
+import type { MyDataStructure } from './my-data-structure-';
+import type { MyIteratorProtocol } from './my-iterator-protocol';
 
 export class MyDefaultIterator implements MyIteratorProtocol<string> {
   private index = 0;
