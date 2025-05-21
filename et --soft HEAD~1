@@ -1,0 +1,107 @@
+[33mcommit f7b551a97744f620d6f1eb0d6f4cd6faabcc3ddd[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: Marcelo Magalhaesm <celoxd01@gmail.com>
+Date:   Tue May 20 21:20:00 2025 -0300
+
+    mend
+
+[33mcommit 0fd269fd63f09f7cd56e36eb8405024b86263f4a[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Marcelo Magalhaesm <celoxd01@gmail.com>
+Date:   Tue May 20 21:15:54 2025 -0300
+
+    State and Template Method - Read JSON and TXT module important module
+
+[33mcommit aba71ff3faea7bfc64f7d6917fda6f23a648707d[m
+Author: Marcelo Magalhaesm <celoxd01@gmail.com>
+Date:   Mon May 19 18:51:07 2025 -0300
+
+    Mediator
+
+[33mcommit a9891ae62168bc54495d18bc819567456257564e[m
+Author: Marcelo Magalhaesm <celoxd01@gmail.com>
+Date:   Sun May 18 00:59:02 2025 -0300
+
+    Memento
+
+[33mcommit 7037d34ad242aa440b2d77c8a9a754190b706909[m
+Author: Marcelo Magalhaesm <celoxd01@gmail.com>
+Date:   Sat May 17 23:58:24 2025 -0300
+
+    Command Finish - ATTENTION: I have a general committee, I'm just giving git as I study
+
+[33mcommit b7e561a184848282cb5c266eeda361e3fdc0b0c8[m
+Author: Marcelo Magalhaesm <celoxd01@gmail.com>
+Date:   Thu May 15 18:43:47 2025 -0300
+
+    Proxy
+
+[33mcommit 70f45286d6f91a635f9ee64885cab983976b557e[m
+Author: Marcelo Magalhaesm <celoxd01@gmail.com>
+Date:   Thu May 15 14:29:58 2025 -0300
+
+    Façade
+
+[33mcommit 0bda1440d95b603f6d00638a7038af765acf2cfe[m
+Author: Marcelo Magalhaesm <celoxd01@gmail.com>
+Date:   Thu May 15 14:17:52 2025 -0300
+
+    Decorator
+
+[33mcommit 87b698ffef9dffee105cae38783d9ba17b63e5e4[m
+Author: Marcelo Magalhaesm <celoxd01@gmail.com>
+Date:   Thu May 15 01:17:22 2025 -0300
+
+    Bridge
+
+[33mcommit 97de939f4faad3d1a5575f1f93c42004a057c34b[m
+Author: Marcelo Magalhaesm <celoxd01@gmail.com>
+Date:   Thu May 15 00:45:47 2025 -0300
+
+    Adapter
+
+[33mcommit 59e722a059e6fc9932f0365f5f5dba9c5ae366bd[m
+Author: Marcelo Magalhaesm <celoxd01@gmail.com>
+Date:   Wed May 14 20:12:12 2025 -0300
+
+    Composite
+
+[33mcommit 6211da123257e34246874773aa0942239cd35282[m
+Author: Marcelo Magalhaesm <celoxd01@gmail.com>
+Date:   Wed May 14 19:36:27 2025 -0300
+
+    Finish Creational
+
+[33mcommit 55916d983ebf4a0babebf14dfeabfae852ea510d[m
+Author: Marcelo Magalhaesm <celoxd01@gmail.com>
+Date:   Wed May 14 16:45:48 2025 -0300
+
+    Abstract Factory
+
+[33mcommit baeb29cadb4d884db252442e605143ebfc3d680d[m
+Author: Marcelo Magalhaesm <celoxd01@gmail.com>
+Date:   Wed May 14 14:39:09 2025 -0300
+
+    Factory Method
+
+[33mcommit 154c95d20ee81699ef5b8ccde301fafd646bc6fb[m
+Author: Marcelo Magalhaesm <celoxd01@gmail.com>
+Date:   Tue May 13 16:31:39 2025 -0300
+
+    Prototype - Deep Clone and Shadow Clone
+
+[33mcommit 7c81b6815f3ebea73d13897c6ea797b15bdafe96[m
+Author: Marcelo Magalhaesm <celoxd01@gmail.com>
+Date:   Tue May 13 15:23:05 2025 -0300
+
+    Builder
+
+[33mcommit cdab321d2e2723d79c817952115606d672c8d23d[m
+Author: Marcelo Magalhaesm <celoxd01@gmail.com>
+Date:   Mon May 12 19:54:54 2025 -0300
+
+    Singleton
+
+[33mcommit 9305695b0997fbb231e58501c5cd3eb0e44e9393[m
+Author: Marcelo Magalhaesm <celoxd01@gmail.com>
+Date:   Fri May 9 14:39:51 2025 -0300
+
+    Initial Project Config: Eslint + Prettier

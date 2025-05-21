@@ -1,4 +1,4 @@
-import { CustomerData } from './customer-data';
+import type { CustomerData } from './customer-data';
 
 export abstract class CustomerDataParser {
   public customerData: CustomerData[] = [];
@@ -14,11 +14,11 @@ export abstract class CustomerDataParser {
   private fixCpf(): CustomerData[] {
     return this.customerData.map((customer) => ({
       ...customer,
-      cpf: customer.cpf.replace(/\D/g, ''),
+      cpf: customer.cpf.replace(/\D/g, ''), // numbers
     }));
   }
 
   protected hook(): void {}
 
-  protected abstract async parseDate(): Promise<CustomerData[]>;
+  protected abstract parseDate(): Promise<CustomerData[]>;
 }

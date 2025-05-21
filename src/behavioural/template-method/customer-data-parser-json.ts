@@ -1,6 +1,6 @@
-import { promises } from 'fs';
+import type { CustomerData } from './customer-data';
 import { CustomerDataParser } from './customer-data-parser';
-import { CustomerData } from './customer-data';
+import { promises } from 'fs';
 
 export class CustomerDataParserJson extends CustomerDataParser {
   protected async parseDate(): Promise<CustomerData[]> {
@@ -14,11 +14,10 @@ export class CustomerDataParserJson extends CustomerDataParser {
       const { name, age, cpf } = customer;
       customerData.push({ name, age, cpf });
     }
-
     return customerData;
   }
 
   hook(): void {
-    console.log('O hook foi executado.');
+    console.log('Execute hook');
   }
 }

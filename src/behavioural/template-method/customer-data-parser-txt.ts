@@ -1,6 +1,6 @@
-import { promises } from 'fs';
+import type { CustomerData } from './customer-data';
 import { CustomerDataParser } from './customer-data-parser';
-import { CustomerData } from './customer-data';
+import { promises } from 'fs';
 
 export class CustomerDataParserTxt extends CustomerDataParser {
   protected async parseDate(): Promise<CustomerData[]> {
@@ -15,7 +15,6 @@ export class CustomerDataParserTxt extends CustomerDataParser {
       const [name, age, cpf] = line.split('\t');
       customerData.push({ name, age, cpf });
     }
-
     return customerData;
   }
 }
